@@ -6,7 +6,7 @@ import WeatherCard from "../components/WeatherCard";
 import Loader from "../components/Loader";
 
 // Replace this with your deployed backend URL later
-const API = "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL;
 
 export default function Home() {
   const [weather, setWeather] = useState(null);
